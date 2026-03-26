@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}О проекте - Flask App{% endblock %}
+
+{% block content %}
+<section class="about-section">
+    <h1>О проекте</h1>
+    
+    <div class="info-card">
+        <h2>Назначение</h2>
+        <p>Данное приложение демонстрирует базовые принципы разработки веб-систем на Flask, 
+           организации работы с репозиторием GitHub и использования системы контроля версий Git.</p>
+    </div>
+
+    <div class="info-card">
+        <h2>Технологии</h2>
+        <ul>
+            <li>Python 3.8+</li>
+            <li>Flask 2.3.3</li>
+            <li>HTML5 / CSS3</li>
+            <li>Git / GitHub</li>
+        </ul>
+    </div>
+
+    <div class="info-card">
+        <h2>Функциональность</h2>
+        <ul>
+            <li>Добавление новых элементов</li>
+            <li>Просмотр списка элементов</li>
+            <li>Удаление элементов</li>
+            <li>Система уведомлений</li>
+            <li>API endpoint для проверки статуса</li>
+        </ul>
+    </div>
+
+    <div class="info-card">
+        <h2>Автор</h2>
+        <p>Лабораторная работа выполнена в рамках учебного курса по разработке программного обеспечения.</p>
+    </div>
+</section>
+{% endblock %}

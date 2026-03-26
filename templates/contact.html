@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Контакты - Flask App{% endblock %}
+
+{% block content %}
+<section class="contact-section">
+    <h1>Контактная информация</h1>
+    
+    <div class="contact-card">
+        <h2>Связаться с разработчиком</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+    </div>
+
+    <div class="contact-info">
+        <h2>Дополнительная информация</h2>
+        <p><strong>Репозиторий:</strong> <a href="https://github.com/username/repo-name" target="_blank">GitHub</a></p>
+        <p><strong>Лицензия:</strong> MIT</p>
+        <p><strong>Версия:</strong> 1.0.0</p>
+    </div>
+</section>
+{% endblock %}

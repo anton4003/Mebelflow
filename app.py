@@ -52,5 +52,10 @@ def api_status():
     """API endpoint для проверки статуса приложения"""
     return {'status': 'ok', 'items_count': len(data_store)}
 
+@app.route('/api/version')
+def api_version():
+    """API endpoint для получения версии приложения"""
+    return {'version': '1.0.0', 'build': '2024.01'}
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
